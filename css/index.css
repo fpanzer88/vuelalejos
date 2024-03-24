@@ -9,3 +9,34 @@
   .btn:hover {
     color: var(--color_1) !important;
     background-color: var(--color_2); }
+
+.main_index {
+  width: 80%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px; }
+
+.tit_main {
+  padding: 30px 0;
+  display: block;
+  font-size: 30px;
+  color: var(--c_txt2); }
+
+.tit_pregunta {
+  font-weight: bold;
+  color: var(--color_1);
+  display: block;
+  font-size: 20px;
+  margin-bottom: 20px; }
+
+.ul_preguntas {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 0 20px 20px;
+  color: var(--c_txt1);
+  font-size: 16px; }
+  .ul_preguntas > li {
+    list-style: none;
+    padding: 10px 0; }
