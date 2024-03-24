@@ -15,8 +15,8 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Vuela Lejos</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -29,12 +29,9 @@
 		<li class="nav-item">
           <a class="nav-link" href="#">Hoteles</a>
         </li>
-		<li class="nav-item">
-          <a class="nav-link" href="#">Centro de Ayuda</a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Preguntas Frecuentes
+            Centro de Ayuda
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#pregunta1">¿Cómo funciona el Check-in automático?</a></li>
@@ -73,6 +70,68 @@
 </section>
 <!-- Cuerpo Pagina -->
 <main class="main_index">
+<!-- Destinos -->
+<section id="destinos">
+<h1 class="tit_main">Viaja donde quieras !!<i class="bi bi-send"></i></h1>
+<form class="form_destinos">
+<select class="form-select input_destinos" aria-label="Default select example">
+  <option selected>Origen</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<select class="form-select input_destinos" aria-label="Default select example">
+  <option selected>Destino</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<input type="date" class="form-control input_destinos" placeholder="Fecha de vuelo" />
+<button type="button" class="btn btn-primary">Buscar Destino</button>	
+</form>
+<div class="grid_destinos">
+<div class="card">
+  <img src="imagenes/destinos/anf-deals.jpg" class="card-img-top img_destino" alt="Antofagasta">
+  <div class="card-body">
+    <h5 class="card-title">Antofagasta</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Reservar</a>
+  </div>
+</div>
+<div class="card">
+  <img src="imagenes/destinos/iqq-deals.jpg" class="card-img-top img_destino" alt="Antofagasta">
+  <div class="card-body">
+    <h5 class="card-title">Iquique</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Reservar</a>
+  </div>
+</div>
+<div class="card">
+  <img src="imagenes/destinos/wca-deals.jpg" class="card-img-top img_destino" alt="Antofagasta">
+  <div class="card-body">
+    <h5 class="card-title">Castro Chiloé</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Reservar</a>
+  </div>
+</div>
+<div class="card">
+  <img src="imagenes/destinos/MCO-deals.jpg" class="card-img-top img_destino" alt="Antofagasta">
+  <div class="card-body">
+    <h5 class="card-title">Orlando</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Reservar</a>
+  </div>
+</div>
+<div class="card">
+  <img src="imagenes/destinos/BUE3-deals.jpg" class="card-img-top img_destino" alt="Antofagasta">
+  <div class="card-body">
+    <h5 class="card-title">Buenos Aires</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Reservar</a>
+  </div>
+</div>
+</div>
+</section>
 <!-- Preguntas Frecuentes -->
 <section id="preguntas">
 <h1 class="tit_main">Preguntas Frecuentes</h1>
@@ -118,13 +177,30 @@
     <div id="p3" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div class="accordion-body">
         <ul class="ul_preguntas">
-			<li>No te preocupes, llama y podrás aceptar el nuevo itinerario que te proponemos: </li>	
-			<li>
-			<ul>
-			<li>Elegir una nueva fecha</li>
-			<li>Pedir la devolución</li>
-			</ul>
-			</li>	
+			<li>No te preocupes, llama y podrás aceptar el nuevo itinerario que te proponemos:	
+				<ul>
+					<li>Elegir una nueva fecha</li>
+					<li>Pedir la devolución</li>
+				</ul>
+			</li>
+			<li><strong>Si quieres elegir una nueva fecha</strong>	
+				<ul>
+					<li>Podrás hacer un cambio sin costo en la misma cabina del viaje original.</li>
+					<li>Podrás reprogramar el nuevo vuelo durante la vigencia de tu pasaje*.</li>
+				</ul>
+			</li>
+			<li><strong>*Vigencia del pasaje</strong>
+				<ul>
+					<li>Si tu viaje original comenzaba entre el 1 de marzo y el 31 de diciembre 2020, la vigencia es hasta el 31 de diciembre de 2021.</li>
+					<li>Si tu viaje original comienza en 2021, la vigencia es de 12 meses a partir de la fecha del primer vuelo de tu pasaje.</li>
+					<li>Si ya comenzaste el viaje, deberás completar el regreso no más allá de 12 meses desde tu primer vuelo.</li>
+				</ul>
+			</li>
+			<li><strong>Si prefieres no viajar y pedir la devolución </strong>
+				<ul>
+					<li>Si prefieres no viajar y pedir la devolución</li>
+				</ul>
+			</li>
 		</ul>
       </div>
     </div>
