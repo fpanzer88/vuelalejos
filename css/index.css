@@ -25,6 +25,9 @@
   .btn-primary:hover {
     color: var(--color_2) !important; }
 
+.paginacion {
+  padding: 20px 0; }
+
 .main_index {
   width: 80%;
   display: block;
@@ -67,6 +70,25 @@
   box-sizing: border-box;
   aspect-ratio: 3/2; }
 
+.grid_hoteles {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px; }
+  .grid_hoteles > div {
+    transition: 0.4s;
+    box-sizing: border-box; }
+    .grid_hoteles > div:hover {
+      transform: scale(1.03); }
+
+.img_hoteles {
+  width: 100%;
+  box-sizing: border-box;
+  aspect-ratio: 4/2;
+  object-fit: cover;
+  object-position: top; }
+
 .tit_pregunta {
   font-weight: bold;
   color: var(--color_1);
@@ -83,6 +105,17 @@
   .ul_preguntas > li {
     list-style: upper-roman;
     padding: 10px 0; }
+
+.ver_mas {
+  display: flex;
+  padding: 16px 0;
+  justify-content: flex-end;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  cursor: pointer; }
+  .ver_mas:hover {
+    text-decoration: underline; }
 
 .pie_pagina {
   width: 100%;
