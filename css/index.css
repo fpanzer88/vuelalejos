@@ -1,0 +1,11 @@
+.bg-body-tertiary {
+  background-color: var(--color_1) !important; }
+  .bg-body-tertiary .navbar-brand, .bg-body-tertiary .nav-link {
+    color: var(--color_2) !important; }
+
+.btn {
+  color: var(--color_2) !important;
+  border: solid 1px var(--color_2) !important; }
+  .btn:hover {
+    color: var(--color_1) !important;
+    background-color: var(--color_2); }
