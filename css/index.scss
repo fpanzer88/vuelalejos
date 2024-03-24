@@ -32,6 +32,11 @@
 .paginacion{
 	padding: 20px 0;
 }
+.menu_principal{
+	position: sticky;
+	top: 0;
+	z-index: 999;
+}
 .main_index{
 	width: 80%;
 	display: block;
@@ -123,6 +128,7 @@
 	font-weight: bold;
 	color: red;
 	cursor: pointer;
+	padding-right: 5px;
 	&:hover{
 		text-decoration: underline;
 	}
@@ -131,11 +137,54 @@
 	width: 100%;
 	box-sizing: border-box;
 	padding: 50px 10%;
-	background-color: var(--color_1);
-	color: var(--color_2);
+	background-color: var(--color_2);
+	color: var(--c_txt2);
+	margin-top: 30px;
+}
+.grid_pie{
+	width: 100%;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 40px;
+	border-top: solid 1px var(--color_1);
+	>div{
+		width: 100%;
+		box-sizing: border-box;
+	}
+}
+.tit_pie{
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--color_1);
+	display: block;
+	margin-bottom: 16px;
+	margin-top: 20px;
+}
+.opc_pie{
+	font-size: 16px;
+	color: var(--c_txt1);
+	display: block;
+	margin-bottom: 10px;
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+.contacto_tit{
+	font-size: 16px;
+	color: var(--c_txt1);
+	display: block;
+	font-weight: bold;
 }
 @media screen and (max-width: 1000px) {
 	.grid_destinos{
 		grid-template-columns: repeat(2, 1fr);
+	}
+	.grid_pie{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.grid_hoteles{
+		grid-template-columns: 1fr;
 	}
 }

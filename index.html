@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>Vuela Lejos - Home</title>
+<meta name="viewport" content="width=600">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	
@@ -12,7 +13,7 @@
 
 <body>
 <!-- Menu Principal -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary menu_principal">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Vuela Lejos</a>
     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,13 +22,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Destinos</a>
+          <a class="nav-link" href="#destinos">Destinos</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="#">Hoteles</a>
+          <a class="nav-link" href="#hoteles">Hoteles</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -254,5 +258,38 @@
 </div>
 </section>	
 </main>
+<footer class="pie_pagina">
+<div class="grid_pie">
+<div>
+<span class="tit_pie">Vuela Lejos</span>
+<a href="#" class="opc_pie">Home</a>
+<a href="#" class="opc_pie">Destinos</a>
+<a href="#" class="opc_pie">Hoteles</a>
+<a href="#" class="opc_pie">Centro de Ayuda</a>
+</div>
+<div>
+<span class="tit_pie">Información Legal</span>
+<a href="#" class="opc_pie">Políticas</a>
+<a href="#" class="opc_pie">Terminos y condiciones</a>
+<a href="#" class="opc_pie">Uso de información</a>
+</div>
+<div>
+<span class="tit_pie">Portales asociados</span>
+<a href="#" class="opc_pie">Despegar</a>
+<a href="#" class="opc_pie">Booking</a>
+<a href="#" class="opc_pie">Uber</a>
+<a href="#" class="opc_pie">AirBnB</a>
+</div>
+<div id="contacto">
+<span class="tit_pie">Contacto</span>
+<span class="contacto_tit">E-mail</span>
+<a href="mailto:contacto@aerolinea.cl" class="opc_pie">contacto@aerolinea.cl</a>
+<span class="contacto_tit">Teléfono 1</span>
+<a href="tel:+56996040090" class="opc_pie">+56 996040090</a>
+<span class="contacto_tit">Teléfono 2</span>
+<a href="tel:+56996040091" class="opc_pie">+56 996040091</a>
+</div>
+</div>
+</footer>
 </body>
 </html>
